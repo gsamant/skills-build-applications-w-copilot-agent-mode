@@ -1,0 +1,138 @@
+.app-shell {
+  min-height: 100vh;
+  color: #f5f7fb;
+  background:
+    radial-gradient(circle at top left, rgba(120, 72, 255, 0.28), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(20, 184, 166, 0.18), transparent 24%),
+    linear-gradient(180deg, #0b1020 0%, #11192f 45%, #090d19 100%);
+}
+
+.topbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  background: rgba(8, 12, 24, 0.72);
+}
+
+.brand {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.brand:hover {
+  color: inherit;
+}
+
+.brand-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.85rem;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.brand-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.brand-tag {
+  color: rgba(229, 231, 235, 0.72);
+  font-size: 0.92rem;
+}
+
+.nav-pills .nav-link {
+  color: rgba(229, 231, 235, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+}
+
+.nav-pills .nav-link.active {
+  color: #08101f;
+  background: linear-gradient(135deg, #f0f9ff, #c4b5fd);
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hero-card,
+.feature-page,
+.metric-card,
+.feature-card {
+  background: rgba(15, 23, 42, 0.88);
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+.hero-card {
+  background:
+    linear-gradient(135deg, rgba(96, 165, 250, 0.18), rgba(168, 85, 247, 0.16)),
+    rgba(15, 23, 42, 0.88);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.76rem;
+  color: #8dd3ff;
+}
+
+.metrics-grid,
+.feature-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.metrics-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.metric-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.metric-label {
+  margin-top: 0.65rem;
+  color: rgba(226, 232, 240, 0.74);
+}
+
+.feature-card h2,
+.feature-card p,
+.feature-page h1,
+.feature-page p,
+.hero-card .lead {
+  color: inherit;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #60a5fa, #8b5cf6);
+  border-color: transparent;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 992px) {
+  .metrics-grid,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
